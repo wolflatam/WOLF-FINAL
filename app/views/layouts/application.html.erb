@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>WOLF</title>
+    <%= favicon_link_tag "/favicon.ico" %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	
+  	<!-- Bootstrap css -->
+  	<link href="assets/bootstrap.css" rel="stylesheet">
+  	<link href="assets/bootstrap-theme.css" rel="stylesheet">
+  	
+   
+
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  	<script src="https://code.jquery.com/jquery.js" rel="javascripts"></script>
+
+  	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  	<script src="assets/bootstrap.js"></script>
+    <script src="assets/dropdown.js"></script>
+    <script src="assets/holder.js"></script>
+    <script src="assets/jquery.js"></script>
+
+ 
+
+    <!-- Google WebFonts -->
+    <link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Exo:400,700' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- Se realiza a barra de navegación -->
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" >
+
+      <div class="container" style="padding-top: 10px">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="/home"><img src="assets/wolf negro.png" height="35px;" ></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+          <ul class="nav nav-pills navbar-right">
+            
+              <li><a href="#">Ingresa</a></li>
+              <li><a href="#">Regístrate</a></li>           
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>      
+    </nav> 
+  </head>
+
+  <body>
+
+  	<%= yield %>
+  </body>
+
+  <footer style="background-color:#fffff">
+    <div class="container marketing">
+      <!-- FOOTER -->
+        
+          <p class="pull-right"><a href="/we">Nosotros</a> &middot; <a href="/contact">Contacto</a> &middot; <a href="#">Privacidad</a>
+          <p><a href="https://www.facebook.com/WOLFLATAM" target="_blank"><img src="assets/fb.png" height="30px;"></a> &middot; <a href="https://twitter.com/WolfLatam" target="_blank"><img src="assets/twitter.png" height="20px;"></a> &middot; <a href="http://www.youtube.com/wolflatam" target="_blank"><img src="assets/you.png" height="30px;"></a> &nbsp; &copy; 2013 WOLF, Todos los derechos reservados.    </p>      
+
+    </div>
+  </footer>
+ 
+</html>
