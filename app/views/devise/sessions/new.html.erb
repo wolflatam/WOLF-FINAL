@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>WOLF-REGISTRO</title>
+	
+</head>
+
+<body>
+
+	<div class="container marketing" style="padding-top: 80px">
+		<div class="row" style="padding-bottom: 30px;";>
+
+        	<h2 style="padding-left: 50px">Ingreso de Usuarios WOLF</h2>
+
+			<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+			  <div style="padding-left: 50px"><%= f.label :email %><br />
+			  <%= f.email_field :email, :autofocus => true %></div>
+
+			  <div style="padding-left: 50px"><%= f.label :password %><br />
+			  <%= f.password_field :password %></div>
+
+			  <% if devise_mapping.rememberable? -%>
+			    <div style="padding-left: 50px"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+			  <% end -%>
+			  <br>
+
+			  <div style="padding-left: 50px"><%= f.submit "Sign in" %></div>
+			  <br>
+			<% end %>
+
+			<%= render "devise/shared/links" %>
+
+		</div>
+	</div><!-- /.row -->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
