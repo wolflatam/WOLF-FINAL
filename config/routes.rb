@@ -1,11 +1,7 @@
 WOLF2::Application.routes.draw do
 
   devise_for :users
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> 9335f866176b66b197c18e0361fe336308208372
   root :to => 'pages#home'
   get 'pages/home'
   match 'home' => 'pages#home'

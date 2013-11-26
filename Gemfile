@@ -23,12 +23,8 @@ end
 
 gem 'jquery-rails'
 
-# Gema de usuarios
-<<<<<<< HEAD
 
-=======
-gem 'devise' 
->>>>>>> 9335f866176b66b197c18e0361fe336308208372
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
