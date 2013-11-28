@@ -14,7 +14,16 @@
             <span class="text-muted" style="color: rgb(94, 86, 86);font-weight: 800;">ROPA. SIN VITRINEAR. PUNTO.</span>
             <br>
             <br>
-            <p><a class="btnwolf" role="button">Regístrate &raquo;</a></p>
+            <p>
+
+              <% if current_user.nil? %>
+                <a href="<%= new_user_registration_path %>" class="btnwolf" role="button">Regístrate &raquo;</a>            
+              <% else %>
+                
+              <% end %>
+              
+
+            </p>
           </div><!-- /.col-lg-4 --> 
           
         </div>
@@ -147,7 +156,11 @@
 
 
         <div class="centered">
-          <a href="#" class="btnwolf">Regístrate!</a>                   
+          <% if current_user.nil? %>
+            <a href="<%= new_user_registration_path %>" class="btnwolf" role="button">Regístrate &raquo;</a>            
+          <% else %>
+            
+          <% end %>                   
              
         </div>
 

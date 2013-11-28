@@ -55,11 +55,19 @@
           <ul class="nav nav-pills navbar-right">
             <li>
               <% if current_user.nil? %>
+                <a href="<%= new_user_registration_path %>">  Regístrate </a>                
+              <% else %>
+                <a >  Hola <%= current_user.email %></a></li>
+              <% end %>
+            <li>
+              <% if current_user.nil? %>
                 <a href="<%= new_user_session_path %>">  Ingresa </a>                
               <% else %>
-                <%= current_user.email %>
+                
                 <%= link_to("Cerrar Sesión", destroy_user_session_path, :method => :delete) %> </li>
               <% end %>
+            
+
 
 
 
@@ -75,7 +83,7 @@
 
        
   	<%= yield %>
-    <p class="notice"><%= notice %>}</p>
+    <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
   </body>
