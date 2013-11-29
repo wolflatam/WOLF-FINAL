@@ -57,7 +57,7 @@
               <% if current_user.nil? %>
                 <a href="<%= new_user_registration_path %>">  Regístrate </a>                
               <% else %>
-                <a >  Hola <%= current_user.email %></a></li>
+                <a >  Hola! <%= current_user.name %></a></li>
               <% end %>
             <li>
               <% if current_user.nil? %>
