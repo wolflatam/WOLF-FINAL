@@ -4,6 +4,30 @@
   </head>
 
   <body>
+
+    
+    <div class="container">
+      <div class="jumbotron" style="background-image:url('/assets/clue.jpg'); background-size: cover; height: 600px";>
+        <div class="container">
+          <div class="col-lg-6">
+            <br>
+            <br>
+            <br>
+            <h2 style="color:black;">Hola, <%= current_user.name %>!</h2>
+            <p class="text-muted" style="color: black;font-weight: 200;">Completa una encuesta muy rápida de lo que te gusta, lo que siempre ocupas y serás asistido por uno de nuestros asesores. El preparará un conjunto de prendas basado en tus preferencias, tus gustos y lo que te falta.
+            </p>
+            <br>
+            <br>
+            <p>              
+               <button class="btnwolf" style="border-color: transparent;" data-toggle="modal" data-target="#myModal2"> Ayúdanos a ayudarte! </button> 
+            </p>
+          </div><!-- /.col-lg-6 -->          
+        </div>
+      </div>
+    </div>
+    
+
+    <hr class="featurette-divider">
   
     <div class="container marketing" style="padding-top: 70px">
 
@@ -13,6 +37,14 @@
           <h3 style="padding-left: 40px" >Hola</h3><h3 style="color:grey; padding-left: 40px"><%= current_user.name %>  <%= current_user.last_name %></h3><h3 style="padding-left: 40px">tú e-mail registrado es el: </h3><h3 style="color:grey; padding-left: 40px"><%= current_user.email %></h3>
           <br>
           <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+                       
           <h3 style="padding-left: 40px">¿Quieres cancelar tu cuenta?</h3>
           <br>
 
@@ -64,6 +96,25 @@
     
       
   </body>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->      
 
 </html>
 
