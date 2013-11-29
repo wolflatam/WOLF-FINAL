@@ -14,6 +14,7 @@ group :development, :test do
 end
 
 gem 'devise'
+gem 'activeadmin'
 
 
 # Gems used only for assets and not required
@@ -28,7 +29,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', "~> 3.0.4"
+gem "jquery-ui-rails", "~> 4.0.4"
 
 
 
