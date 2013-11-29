@@ -319,6 +319,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline-color: black;
 }
 
 a {
