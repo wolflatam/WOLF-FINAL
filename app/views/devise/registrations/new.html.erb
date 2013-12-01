@@ -7,12 +7,206 @@
 <body>
 
 	<div class="container marketing" style="padding-top: 80px">
+
 		<div class="row" style="padding-bottom: 30px;";>
 
-        <h2 style="padding-left: 50px">Inscríbete en WOLF</h2>
+    	<h2 style="padding-left: 50px">Inscríbete en WOLF</h2>
 
-				
-			  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+			<h3 style="padding-left: 50px" align="center">1. Choose Your Current Style Level.</h3>
+	    <h4 style="padding-left: 50px" align="center">Knowing how you dress will help us better serve you.</h4>
+	    <br>		    
+  		<div class="container centered" style="padding-left: 200px; padding-right: 200px">   
+	     	<div class="col-md-4 centered">                                  
+		      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">
+		      <br>
+		      
+		    </div>
+		    <div class="col-md-4 centered">                                  
+		      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">
+		      <br>
+		      
+		    </div>	
+		    <div class="col-md-4 centered">                                  
+		      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">
+		      <br>
+		      
+		    </div>
+
+		    <div class="btn-group centered" data-toggle="buttons" >
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option1"> Option 1
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option2"> Option 2
+				  </label>
+				  <label class="btn btn-primary">
+				    <input type="radio" name="options" id="option3"> Option 3
+				  </label>
+				</div>
+	    </div>
+	    <br>
+
+	    <hr class="featurette-divider">
+	    <br>
+
+	    <h3 style="padding-left: 50px" align="center">2. ¿Qué te gustaría ocupar?</h3>
+	    <h4 style="padding-left: 50px" align="center">Knowing how you dress will help us better serve you.</h4>
+	    <br>		    
+  		<div class="container centered" style="padding-left: 50px; padding-right: 50px">
+  		  
+  		  	<div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput1" name="" />
+					  	<label for="checkboxFiveInput1"></label>
+				  	</div>			      
+			    </div>
+			    <div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput2" name="" />
+					  	<label for="checkboxFiveInput2"></label>
+				  	</div>			      
+			    </div>
+			    <div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput3" name="" />
+					  	<label for="checkboxFiveInput3"></label>
+				  	</div>			      
+			    </div>
+			    <div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput4" name="" />
+					  	<label for="checkboxFiveInput4"></label>
+				  	</div>			      
+			    </div>
+			    <div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput5" name="" />
+					  	<label for="checkboxFiveInput5"></label>
+				  	</div>			      
+			    </div>
+			    <div class="col-md-2 centered">                                  
+			      <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">			      
+			      <div class="checkboxFive centered" align="center">
+				  		<input type="checkbox" value="1" id="checkboxFiveInput6" name="" />
+					  	<label for="checkboxFiveInput6"></label>
+				  	</div>			      
+			    </div>
+
+	    </div>
+
+	    <br>
+	    <hr class="featurette-divider">
+	    <br>
+
+	    <h3 style="padding-left: 50px" align="center">3. ¿Cuales son tus tallas?.</h3>
+	    <h4 style="padding-left: 50px" align="center">Knowing how you dress will help us better serve you.</h4>
+
+	    <div class="container centered" style="padding-left: 100px; padding-right: 100px">   
+	     	<div class="col-md-3 centered">                                  
+		      <img src="/assets/camisa.jpg" style="height:200px;width: 200px" class="img-rounded img-responsive">
+		      <br>
+		      <h5>Camisa</h5>
+		      <div class="form-group">
+				    <label class="sr-only" for="marcacamisa">Marca</label>
+				    <input type="string" class="form-control" id="marcacamisa" placeholder="Marca">
+				    <select class="form-control">
+						  <option>14½</option>
+						  <option>15</option>
+						  <option>15½</option>
+						  <option>16</option>
+						  <option>16½</option>
+						  <option>17</option>
+						  <option>17½</option>
+						  <optgroup>18</optgroup>
+						</select>
+
+				  </div>
+		      
+		    </div>
+		    <div class="col-md-3 centered">                                  
+		      <img src="/assets/polera.jpg" style="height:200px;width: 200px" class="img-rounded img-responsive">
+		      <br>
+		      <h5>Polera</h5>
+		      <div class="form-group">
+				    <label class="sr-only" for="marcacamisa">Marca</label>
+				    <input type="string" class="form-control" id="marcacamisa" placeholder="Marca">
+				    <select class="form-control">
+						  <option>S</option>
+						  <option>M</option>
+						  <option>L</option>
+						  <option>XL</option>
+						  <option>XXL</option>
+
+						</select>
+
+				  </div>
+		      
+		    </div>	
+		    <div class="col-md-3 centered">                                  
+		      <img src="/assets/pantalones.jpg" style="height:200px;width: 200px" class="img-rounded img-responsive">
+		      <br>
+		      <h5>Pantalón</h5>
+		      <div class="form-group">
+				    <label class="sr-only" for="marcacamisa">Marca</label>
+				    <input type="string" class="form-control" id="marcacamisa" placeholder="Marca">
+				    <select class="form-control">
+						  <option>42</option>
+						  <option>44</option>
+						  <option>46</option>
+						  <option>48</option>
+						  <option>50</option>
+						  <option>52</option>
+						  <option>54</option>
+						  <option>56</option>
+
+
+						</select>
+
+				  </div>
+
+		    </div>
+		    <div class="col-md-3 centered">                                  
+		      <img src="/assets/chaqueta.jpg" style="height:200px;width: 200px" class="img-rounded img-responsive">
+		      <br>
+		      <h5>Chaqueta</h5>		
+		      <div class="form-group">
+				    <label class="sr-only" for="marcacamisa">Marca</label>
+				    <input type="string" class="form-control" id="marcacamisa" placeholder="Marca">
+				    <select class="form-control">
+						  <option>42</option>
+						  <option>44</option>
+						  <option>46</option>
+						  <option>48</option>
+						  <option>50</option>
+						  <option>52</option>
+						  <option>54</option>
+						  <option>56</option>
+
+						</select>
+
+				  </div>		      
+		    </div>
+
+
+		    
+	    </div>
+
+	    <br>
+	    <hr class="featurette-divider">
+	    <br>
+
+	    <h3 style="padding-left: 50px" align="center">Create tu cuenta</h3>
+	    <h4 style="padding-left: 50px" align="center">We'll match you with your own personal stylist, for free.</h4>
+	    <br>
+
+	    <div class="container" style="padding-left: 50px;">
+
+	    	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 			  <%= devise_error_messages! %>
 
 			  <div style="padding-left: 50px"><%= f.label :name %><br />
@@ -32,15 +226,29 @@
 
 			  <br>
 
-			  <div style="padding-left: 50px"><%= f.submit "Regístrate!", :class => 'btnwolfsm' %></div>
+			  <div style="padding-left: 50px"><%= f.submit "Regístrate!", :class => 'btnwolf' %></div>
 				<% end %>
 
 				<br>
 				
 				<%= render "devise/shared/links" %>
 
+	    </div>
+
+     	
+
 		</div>
-	</div><!-- /.row -->
+
+
+
+
+	
+
+       
+
+
+
+	</div><!-- container -->
 
 
 </body>

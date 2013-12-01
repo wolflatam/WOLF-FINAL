@@ -16,6 +16,8 @@ WOLF2::Application.routes.draw do
   match 'we' => 'pages#we'
   get 'pages/privacy'
   match 'privacy' => 'pages#privacy'
+  get 'pages/register'
+  match 'register' => 'pages#register'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

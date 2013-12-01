@@ -2337,7 +2337,13 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #ffffff;
   background-color: #428bca;
-  border-color: #357ebd;
+  border-color: transparent;
+  border-radius: 0px;
+  border-color: transparent;
+  font-family: 'Arimo', sans-serif;
+
+  font-size: 15px;
+  padding: 10px 30px 10px 30px;
 }
 
 .btn-primary:hover,
@@ -2347,7 +2353,7 @@ fieldset[disabled] .btn-default.active {
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
   background-color: #3276b1;
-  border-color: #285e8e;
+  border-color: transparent;
 }
 
 .btn-primary:active,
@@ -7121,4 +7127,65 @@ opacity: 1;
 {
     text-align:center;
 }
+
+/**
+ * Checkbox Five
+ */
+.checkboxFive {
+  width: 25px;
+  margin: 20px 100px;
+  position: relative;
+}
+
+/**
+ * Create the box for the checkbox
+ */
+.checkboxFive label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+    left: 0;
+  background: #eee;
+  border:1px solid #ddd;
+}
+
+/**
+ * Display the tick inside the checkbox
+ */
+.checkboxFive label:after {
+  opacity: 0.2;
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  background: transparent;
+  top: 6px;
+  left: 7px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkboxFive label:hover::after {
+  opacity: 0.5;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkboxFive input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
 
