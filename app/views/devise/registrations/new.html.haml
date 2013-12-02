@@ -1,0 +1,164 @@
+.container.marketing{style: "padding-top: 80px"}
+  .row{style: "padding-bottom: 30px;"}
+    %h2{style: "padding-left: 50px"} Inscríbete en WOLF
+    %h3{align: "center", style: "padding-left: 50px"} 1. Choose Your Current Style Level.
+    %h4{align: "center", style: "padding-left: 50px"} Knowing how you dress will help us better serve you.
+    %br/
+
+    .container.centered{style: "padding-left: 200px; padding-right: 200px"}
+      .col-md-4.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        %br/
+      .col-md-4.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        %br/
+      .col-md-4.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        %br/
+      .btn-group.centered{"data-toggle" => "buttons"}
+        %label.btn.btn-primary
+          %input#option1{name: "options", type: "radio"}/
+          Option 1
+        %label.btn.btn-primary
+          %input#option2{name: "options", type: "radio"}/
+          Option 2
+        %label.btn.btn-primary
+          %input#option3{name: "options", type: "radio"}/
+          Option 3
+
+    %br/
+    %hr.featurette-divider/
+    %br/
+    %h3{align: "center", style: "padding-left: 50px"} 2. ¿Qué te gustaría ocupar?
+    %h4{align: "center", style: "padding-left: 50px"} Knowing how you dress will help us better serve you.
+    %br/
+    .container.centered{style: "padding-left: 50px; padding-right: 50px"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#checkboxFiveInput1{name: "", type: "checkbox", value: "1"}/
+          %label{for: "checkboxFiveInput1"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#user_tipo2{name: "[user]tipo2", type: "checkbox", value: "1"}/
+          %label{for: "user_tipo2"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#checkboxFiveInput3{name: "", type: "checkbox", value: "1"}/
+          %label{for: "checkboxFiveInput3"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#checkboxFiveInput4{name: "", type: "checkbox", value: "1"}/
+          %label{for: "checkboxFiveInput4"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#checkboxFiveInput5{name: "", type: "checkbox", value: "1"}/
+          %label{for: "checkboxFiveInput5"}
+      .col-md-2.centered
+        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+        .checkboxFive.centered{align: "center"}
+          %input#checkboxFiveInput6{name: "", type: "checkbox", value: "1"}/
+          %label{for: "checkboxFiveInput6"}
+
+
+    .container{style: "padding-left: 50px;"}
+      = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+        = devise_error_messages!
+
+        %br/
+        %hr.featurette-divider/
+        %br/
+
+        %h3{align: "center", style: "padding-left: 50px"} 3. ¿Cuales son tus tallas?.
+        %h4{align: "center", style: "padding-left: 50px"} Knowing how you dress will help us better serve you.
+        .container.centered{style: "padding-left: 100px; padding-right: 100px"}
+          .col-md-3.centered
+            %img.img-rounded.img-responsive{src: "/assets/camisa.jpg", style: "height:200px;width: 200px"}/
+            %br/
+            %h5 Camisa
+            .form-group
+              %label.sr-only{for: "marcacamisa"} Marca
+              = f.text_field :marcacamisa, :placeholder => "Marca", :class => "form-control"
+              = f.select :tallacamisa, [['14½','14½'],['15','15'],['15½','15½'],['16','16'],['16½','16½'],['17','17'],['17½','17½'],['18','18']], {}, {:class => 'form-control'}
+
+          .col-md-3.centered
+            %img.img-rounded.img-responsive{src: "/assets/polera.jpg", style: "height:200px;width: 200px"}/
+            %br/
+            %h5 Polera
+            .form-group
+              %label.sr-only{for: "marcacamisa"} Marca
+              %input#marcacamisa.form-control{placeholder: "Marca", type: "string"}/
+              %select.form-control
+                %option S
+                %option M
+                %option L
+                %option XL
+                %option XXL
+          .col-md-3.centered
+            %img.img-rounded.img-responsive{src: "/assets/pantalones.jpg", style: "height:200px;width: 200px"}/
+            %br/
+            %h5 Pantalón
+            .form-group
+              %label.sr-only{for: "marcacamisa"} Marca
+              %input#marcacamisa.form-control{placeholder: "Marca", type: "string"}/
+              %select.form-control
+                %option 42
+                %option 44
+                %option 46
+                %option 48
+                %option 50
+                %option 52
+                %option 54
+                %option 56
+          .col-md-3.centered
+            %img.img-rounded.img-responsive{src: "/assets/chaqueta.jpg", style: "height:200px;width: 200px"}/
+            %br/
+            %h5 Chaqueta
+            .form-group
+              %label.sr-only{for: "marcacamisa"} Marca
+              %input#marcacamisa.form-control{placeholder: "Marca", type: "string"}/
+              %select.form-control
+                %option 42
+                %option 44
+                %option 46
+                %option 48
+                %option 50
+                %option 52
+                %option 54
+                %option 56
+        %br/
+        %hr.featurette-divider/
+        %br/
+        %h3{align: "center", style: "padding-left: 50px"} Create tu cuenta
+        %h4{align: "center", style: "padding-left: 50px"} We'll match you with your own personal stylist, for free.
+        %br/
+
+        %div{style: "padding-left: 50px"}
+          = f.label :name
+          %br/
+          = f.text_field :name, :autofocus => true
+        %div{style: "padding-left: 50px"}
+          = f.label :last_name
+          %br/
+          = f.text_field :last_name, :autofocus => true
+        %div{style: "padding-left: 50px"}
+          = f.label :email
+          %br/
+          = f.email_field :email, :autofocus => true
+        %div{style: "padding-left: 50px"}
+          = f.label :password
+          %br/
+          = f.password_field :password
+        %div{style: "padding-left: 50px"}
+          = f.label :password_confirmation
+          %br/
+          = f.password_field :password_confirmation
+        %br/
+        %div{style: "padding-left: 50px"}= f.submit "Regístrate!", :class => 'btnwolf'
+      %br/
+      = render "devise/shared/links"
+/ container
