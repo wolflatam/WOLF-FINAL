@@ -48,19 +48,19 @@
               <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
             <% end %>
 
-            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :name %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
+            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :Nombre %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
             <%= f.text_field :name, :autocomplete => "off" %></div>
 
-            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :last_name %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
+            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :Apellido %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
             <%= f.text_field :last_name, :autocomplete => "off" %></div>
 
-            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :password %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
+            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :contraseña %> <i>(déjala en blanco si no la quieres cambiar)</i><br />
             <%= f.password_field :password, :autocomplete => "off" %></div>
 
-            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :password_confirmation %><br />
+            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :confirma_tu_contraseña %><br />
             <%= f.password_field :password_confirmation %></div>
 
-            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :current_password %> <i>(ingresa tu contraseña para confirmar los cambios)</i><br />
+            <div style="padding-left: 50px; padding-bottom: 10px"><%= f.label :contraseña_actual %> <i>(ingresa tu contraseña para confirmar los cambios)</i><br />
             <%= f.password_field :current_password %></div>
             <br>
 

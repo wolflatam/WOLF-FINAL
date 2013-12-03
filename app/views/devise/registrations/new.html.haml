@@ -117,27 +117,28 @@
         %br/
 
         %div{style: "padding-left: 50px"}
-          = f.label :name
+          = f.label :Nombre
           %br/
           = f.text_field :name, :autofocus => true
         %div{style: "padding-left: 50px"}
-          = f.label :last_name
+          = f.label :Apellido
           %br/
           = f.text_field :last_name, :autofocus => true
         %div{style: "padding-left: 50px"}
-          = f.label :email
+          = f.label :Correo_Electrónico
           %br/
           = f.email_field :email, :autofocus => true
         %div{style: "padding-left: 50px"}
-          = f.label :password
+          = f.label :contraseña
           %br/
           = f.password_field :password
         %div{style: "padding-left: 50px"}
-          = f.label :password_confirmation
+          = f.label :confirma_tu_contraseña
           %br/
           = f.password_field :password_confirmation
         %br/
         %div{style: "padding-left: 50px"}= f.submit "Regístrate!", :class => 'btnwolf'
       %br/
       = render "devise/shared/links"
+
 / container
