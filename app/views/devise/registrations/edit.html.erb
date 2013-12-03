@@ -3,33 +3,12 @@
     <title>WOLF-REGISTRO</title>  
   </head>
 
-  <body>
-
-    
-    
-      <div class="jumbotron" style="background-image:url('/assets/clue.jpg'); background-size: cover; height: 600px";>
-        <div class="container">
-          <div class="col-lg-6">
-            <br>
-            <br>
-            <br>
-            <h2 style="color:black;">Hola, <%= current_user.name %>!</h2>
-            <p class="text-muted" style="color: black;font-weight: 200;">Completa una encuesta muy rápida de lo que te gusta, lo que siempre ocupas y serás asistido por uno de nuestros asesores. El preparará un conjunto de prendas basado en tus preferencias, tus gustos y lo que te falta.
-            </p>
-            <br>
-            <br>
-            <p>              
-               <button class="btnwolf" style="border-color: transparent;" data-toggle="modal" data-target="#myModal2"> Ayúdanos a ayudarte! </button> 
-            </p>
-          </div><!-- /.col-lg-6 -->          
-        </div>
-      </div>
-    
-    
+  <body> 
+ 
 
     <hr class="featurette-divider">
   
-    <div class="container marketing" style="padding-top: 70px">
+    <div class="container marketing" style="padding-top: 30px">
 
       <div class="row" style="padding-bottom: 30px; padding-top: 20px";>
         <h2 style="padding-left: 50px">Edita tu perfil</span></h2> 
@@ -97,70 +76,7 @@
       
   </body>
 
-                <!-- Modal -->
-                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-                      </div>
-                      <div class="modal-body">
-
-                        <div class="bs-example bs-example-tabs">
-                            <ul id="myTab" class="nav nav-tabs">
-                              <li class="active"><a href="#estilo" data-toggle="tab">1. Estilo</a></li>
-                              <li><a href="#algo" data-toggle="tab">2. Algo?</a></li>
-                              <li><a href="#marcas" data-toggle="tab">3. Marcas?</a></li>
-                              <li><a href="#tallas" data-toggle="tab">4. Tallas</a></li>
-                              
-                            </ul>
-                            <div id="myTabContent" class="tab-content">
-                              <div class="tab-pane fade in active" id="estilo">
-                                <h4>Choose Your Current Style Level.</h4>
-                                <h5>Knowing how you dress will help us better serve you.</h5>
-                                <div class="col-md-4">
-                                  <div class="centered">
-                                    <img src="/assets/estilo1.jpg" style="" class="img-rounded img-responsive">
-                                    <br>
-                                    <a href="#algo" data-toggle="tab" class="btnwolfsm" role="button">Soy Yo</a>
-                                    <input type="checkbox">
-                                  </div>                                  
-                                </div>
-                                 <div class="col-md-4 centered">                                  
-                                  <img src="/assets/estilo2.jpg" style="" class="img-rounded img-responsive">
-                                  <br>
-                                  <button type="button" class="btnwolfsm" href="#algo" data-toggle="tab">Soy Yo</button>
-                                </div>
-                                 <div class="col-md-4">
-                                  <div class="centered">
-                                    <img src="/assets/estilo3.jpg" style="" class="img-rounded img-responsive">
-                                    <br>
-                                    <button type="button" class="btnwolfsm" align="center">Soy Yo</button>
-                                  </div>                                  
-                                </div>
-                                                               
-                                
-                              </div>
-                              <div class="tab-pane fade" id="algo">
-                                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
-                              </div>
-                              <div class="tab-pane fade" id="dropdown1">
-                                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
-                              </div>
-                              <div class="tab-pane fade" id="dropdown2">
-                                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
-                              </div>
-                            </div>
-                          </div>
-                        ...
-                      </div>
-                      <div class="modal-footer">                        
-                        <button type="button" class="btnwolfsm" data-dismiss="modal">Save changes</button>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->      
+                
 
 </html>
 
