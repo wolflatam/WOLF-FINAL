@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>WOLF-REGISTRO</title>  
+  </head>
+
+  <body> 
+    <hr class="featurette-divider"> 
+    <div class="container marketing" >
+
+      <div class="row" style="padding-top: 15px; padding-bottom: 15px; background-image: url('http://www.ipadwallpaperhd.com/wallpapers/black_wood_background-1440x900.jpg');">
+        <h2 style="padding-left: 50px; color:white">¡Hola! <%= current_user.name %></span></h2>         
+        <h3 style="padding-left: 50px; color: white" >Esta es tu cuenta</h3>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row" style="padding-bottom: 30px; padding-top: 20px";>
+
+        <div class="col-lg-2" align="center">
+            <a href="#" class="highlightit"><img class="img-circle" border="0" src="/assets/pedir.png" style="width: 100px; height: 100px;" align="center" ></a>            
+            <h3>Pedir</h3>
+            <p style="font-size: 14px;">Completa una encuesta muy rápida sobre lo que te gusta y lo que siempre ocupas; para luego ser asistido por uno de nuestros asesores.</p>                   
+          </div><!-- /.col-lg-4 -->
+
+          <div class="col-lg-2" align="center">
+            <a href="/ordenes" class="highlightit"><img class="img-circle" border="0" src="/assets/orders.png" style="width: 100px; height: 100px;" align="center" ></a>   
+            <h3>Ver Órdenes</h3>
+            <p style="font-size: 14px;">Tu asesor prepara un conjunto de prendas basado en tus preferencias, tus gustos y lo que te falta.</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-2" align="center">
+            <a href="/tallas" class="highlightit"><img class="img-circle" border="0" src="/assets/ruler.png" style="width: 100px; height: 100px;" align="center" ></a>   
+            <h3>Tallas</h3>
+            <p style="font-size: 14px;">Recibe tus prendas elegidas en tu casa sin tener que pisar una tienda.</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-2" align="center">
+            <a href="<%= edit_user_registration_path %>" class="highlightit"><img class="img-circle" border="0" src="/assets/perfil.png" style="width: 100px; height: 100px;" align="center" ></a>   
+            <h3>Edita tu perfil</h3>
+            <p style="font-size: 14px;">Recibe tus prendas elegidas en tu casa sin tener que pisar una tienda.</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-2" align="center">
+            <a href="#" class="highlightit"><img class="img-circle" border="0" src="/assets/truck2.png" style="width: 100px; height: 100px;" align="center" ></a>   
+            <h3>Shipping</h3>
+            <p style="font-size: 14px;">Recibe tus prendas elegidas en tu casa sin tener que pisar una tienda.</p>
+            
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-2" align="center">
+            <a href="<%= edit_user_registration_path %>" class="highlightit"><img class="img-circle" border="0" src="/assets/eliminar.png" style="width: 100px; height: 100px;" align="center" ></a>
+            <h3>Eliminar tu cuenta</h3>
+            <p style="font-size: 14px;">Recibe tus prendas elegidas en tu casa sin tener que pisar una tienda.</p>
+            
+          </div><!-- /.col-lg-4 -->
+
+      </div>
+    </div> 
+  </body>
+
+                
+
+</html>
+
+

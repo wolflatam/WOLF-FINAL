@@ -6,7 +6,6 @@ WOLF2::Application.routes.draw do
   devise_for :users
   ActiveAdmin.routes(self)
 
-  
   get 'pages/home'
   match 'home' => 'pages#home'
   get 'pages/contact'
@@ -17,6 +16,12 @@ WOLF2::Application.routes.draw do
   match 'privacy' => 'pages#privacy'
   get 'pages/register'
   match 'register' => 'pages#register'
+  get 'pages/cuenta'
+  match 'cuenta' => 'pages#cuenta'
+  get 'pages/ordenes'
+  match 'ordenes' => 'pages#ordenes'
+  get 'pages/tallas'
+  match 'tallas' => 'pages#tallas'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

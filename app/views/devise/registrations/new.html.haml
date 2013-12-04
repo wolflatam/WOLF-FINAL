@@ -1,73 +1,63 @@
 .container.marketing{style: "padding-top: 80px"}
   .row{style: "padding-bottom: 30px;"}
-    %h2{style: "padding-left: 50px"} Inscríbete en WOLF
-    %h3{align: "center", style: "padding-left: 50px"} 1. Escoge cómo es que te vistes hoy.
-    %h4{align: "center", style: "padding-left: 50px"} Saber cómo te vistes nos ayudará a ayudarte de mejor manera.
-    %br/
+    = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+      = devise_error_messages!
+      %h2{style: "padding-left: 50px"} Inscríbete en WOLF
+      %h3{align: "center", style: "padding-left: 50px"} 1. Escoge cómo es que te vistes hoy.
+      %h4{align: "center", style: "padding-left: 50px"} Saber cómo te vistes nos ayudará a ayudarte de mejor manera.
+      %br/
 
-    .container.centered{style: "padding-left: 200px; padding-right: 200px"}
-      .col-md-4.centered
-        %img.img-rounded.img-responsive{src: "/assets/estilo1.jpg", style: ""}/
-        %br/
-      .col-md-4.centered
-        %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
-        %br/
-      .col-md-4.centered
-        %img.img-rounded.img-responsive{src: "/assets/estilo3.jpg", style: ""}/
-        %br/
-      .btn-group.centered{"data-toggle" => "buttons"}
-        %label.btn.btn-primary
-          %input#option1{name: "options", type: "radio"}/
-          Opción 1
-        %label.btn.btn-primary
-          %input#option2{name: "options", type: "radio"}/
-          Opción 2
-        %label.btn.btn-primary
-          %input#option3{name: "options", type: "radio"}/
-          Opción 3
+      .container.centered{style: "padding-left: 200px; padding-right: 200px"}
+        .col-md-4.centered
+          %img.img-rounded.img-responsive{src: "/assets/estilo1.jpg", style: ""}/
+          %br/
+          .radio
+            = f.radio_button :soy, 'soy1', checked: true              
+        .col-md-4.centered
+          %img.img-rounded.img-responsive{src: "/assets/estilo2.jpg", style: ""}/
+          %br/
+          .radio
+            = f.radio_button :soy, 'soy2'
+        .col-md-4.centered
+          %img.img-rounded.img-responsive{src: "/assets/estilo3.jpg", style: ""}/
+          %br/
+          .radio
+            = f.radio_button :soy, 'soy3'
 
-    %br/
-    %hr.featurette-divider/
-    %br/
-    %h3{align: "center", style: "padding-left: 50px"} 2. ¿Qué te gustaría ocupar?
-    %h4{align: "center", style: "padding-left: 50px"} Saber cómo quieres vestir nos ayudará a ayudarte de mejor manera.
-    %br/
-    .container.centered{style: "padding-left: 50px; padding-right: 50px"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy1.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#checkboxFiveInput1{name: "", type: "checkbox", value: "1"}/
-          %label{for: "checkboxFiveInput1"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy2.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#user_tipo2{name: "[user]tipo2", type: "checkbox", value: "1"}/
-          %label{for: "user_tipo2"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy3.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#checkboxFiveInput3{name: "", type: "checkbox", value: "1"}/
-          %label{for: "checkboxFiveInput3"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy4.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#checkboxFiveInput4{name: "", type: "checkbox", value: "1"}/
-          %label{for: "checkboxFiveInput4"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy5.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#checkboxFiveInput5{name: "", type: "checkbox", value: "1"}/
-          %label{for: "checkboxFiveInput5"}
-      .col-md-2.centered
-        %img.img-rounded.img-responsive{src: "/assets/soy6.jpg", style: ""}/
-        .checkboxFive.centered{align: "center"}
-          %input#checkboxFiveInput6{name: "", type: "checkbox", value: "1"}/
-          %label{for: "checkboxFiveInput6"}
+          
 
+      %hr.featurette-divider/
+      %br/
+      %h3{align: "center", style: "padding-left: 50px"} 2. ¿Qué te gustaría ocupar?
+      %h4{align: "center", style: "padding-left: 50px"} Saber cómo quieres vestir nos ayudará a ayudarte de mejor manera.
+      %br/
+      .container.centered{style: "padding-left: 50px; padding-right: 50px"}
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy1.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo1
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy2.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo2
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy3.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo3
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy4.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo4
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy5.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo5
+        .col-md-2.centered
+          %img.img-rounded.img-responsive{src: "/assets/soy6.jpg", style: ""}/
+          .checkbox.centered
+            = f.check_box :tipo6
 
-    .container{style: "padding-left: 50px;"}
-      = form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
-        = devise_error_messages!
+      .container{style: "padding-left: 50px;"}      
 
         %br/
         %hr.featurette-divider/
@@ -84,7 +74,6 @@
               %label.sr-only{for: "marcacamisa"} Marca
               = f.text_field :marcacamisa, :placeholder => "Marca", :class => "form-control"
               = f.select :tallacamisa, [['14½','14½'],['15','15'],['15½','15½'],['16','16'],['16½','16½'],['17','17'],['17½','17½'],['18','18']], {}, {:class => 'form-control'}
-
           .col-md-3.centered
             %img.img-rounded.img-responsive{src: "/assets/polera.jpg", style: "height:200px;width: 200px"}/
             %br/
@@ -138,6 +127,6 @@
           = f.password_field :password_confirmation
         %br/
         %div{style: "padding-left: 50px"}= f.submit "Regístrate!", :class => 'btnwolf'
-      %br/
-      = render "devise/shared/links"
+        %br/
+        = render "devise/shared/links"
 / container

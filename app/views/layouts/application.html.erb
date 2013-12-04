@@ -51,28 +51,43 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">          
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
           <ul class="nav nav-pills navbar-right">
-            <li>
-              <% if current_user.nil? %>
-                <a href="<%= new_user_registration_path %>">  Regístrate </a>                
-              <% else %>
-                <a href="<%= edit_user_registration_path %>">  Hola! <%= current_user.name %></a></li>
-              <% end %>
+
+            <% if current_user.nil? %>
+                <li class="active">
+                  <a href="<%= new_user_registration_path %>"> Regístrate </a>
+                </li>             
+            <% else %>
+              <script src="/assets/dropdown.js"></script>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-weight: bold;background-color: lightgray;">
+                  <%= current_user.name %> <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="/cuenta">MI CUENTA</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Pedir</a></li>
+                  <li><a href="/ordenes">Ver Órdenes</a></li>
+                  <li><a href="/tallas">Tallas</a></li>
+                  <li><a href="<%= edit_user_registration_path %>">Edita tu Perfil</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  
+                  
+                </ul>
+              </li>
+            <% end %>
             <li>
               <% if current_user.nil? %>
                 <a href="<%= new_user_session_path %>">  Ingresa </a>                
-              <% else %>
-                
+              <% else %>                
                 <%= link_to("Cerrar Sesión", destroy_user_session_path, :method => :delete) %> </li>
-              <% end %>
+              <% end %>           
             
-
-
-
-
-                         
           </ul>
+
+
         </div><!-- /.navbar-collapse -->
       </div>      
     </nav>

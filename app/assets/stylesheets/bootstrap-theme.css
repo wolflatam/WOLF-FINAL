@@ -484,6 +484,7 @@ float: none;
   font-size: 20px;
   padding: 16px 40px 16px 40px;
   text-decoration: none;
+  border: transparent;
 }
 
 .btnwolf:hover {
@@ -511,6 +512,7 @@ a.btnwolf:focus {
   font-size: 15px;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
+  border: transparent;
 }
 
 .btnwolfsm:hover {

@@ -19,6 +19,8 @@
               <% if current_user.nil? %>
                 <a href="<%= new_user_registration_path %>" class="btnwolf" role="button">Regístrate &raquo;</a>            
               <% else %>
+
+                <a href="/cuenta" class="btnwolf" role="button">Tu cuenta, <%= current_user.name %> &raquo;</a>
                 
               <% end %>
               
@@ -159,6 +161,7 @@
           <% if current_user.nil? %>
             <a href="<%= new_user_registration_path %>" class="btnwolf" role="button">Regístrate &raquo;</a>            
           <% else %>
+            <a href="/cuenta" class="btnwolf" role="button">Tu cuenta, <%= current_user.name %> &raquo;</a>
             
           <% end %>                   
              

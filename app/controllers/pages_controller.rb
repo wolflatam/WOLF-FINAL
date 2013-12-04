@@ -6,5 +6,12 @@ class PagesController < ApplicationController
   def we
   end
   def privacy	
-  end	
+  end
+  def cuenta
+  end
+  def ordenes
+  end
+  def tallas  
+  end
+
 end

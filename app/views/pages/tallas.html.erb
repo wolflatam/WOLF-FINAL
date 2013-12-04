@@ -1,0 +1,37 @@
+<div class="container marketing" style="padding-top: 80px">
+  <div class="row" style="padding-bottom: 30px;">
+    <h2 style="padding-left: 50px">Tus tallas y marcas, <%= current_user.name %></h2>
+    <h3 style="color: grey; padding-left: 50px">...que te quedan bien.</h3>
+
+    <div class="container" style="padding-left: 50px;">
+      <div class="container centered" style="padding-left: 100px; padding-right: 100px">
+        <div class="col-md-3 centered">
+          <img class="img-rounded img-responsive" src="/assets/camisa.jpg" style="height:200px;width: 200px"/>
+          <br/>
+          <h5>Camisa</h5>
+          <h5 style="color: grey">Marca: <%= current_user.marcacamisa %>, talla: <%= current_user.tallacamisa %></h5>
+        </div>
+        <div class="col-md-3 centered">
+          <img class="img-rounded img-responsive" src="/assets/polera.jpg" style="height:200px;width: 200px"/>
+          <br/>
+          <h5>Polera</h5>
+          <h5 style="color: grey">Marca: <%= current_user.marcapolera %>, talla: <%= current_user.tallapolera %></h5>
+        </div>
+        <div class="col-md-3 centered">
+          <img class="img-rounded img-responsive" src="/assets/pantalones.jpg" style="height:200px;width: 200px"/>
+          <br/>
+          <h5>Pantalón</h5>
+          <h5 style="color: grey">Marca: <%= current_user.marcapantalon %>, talla: <%= current_user.tallapantalon %></h5>
+        </div>
+        <div class="col-md-3 centered">
+          <img class="img-rounded img-responsive" src="/assets/chaqueta.jpg" style="height:200px;width: 200px"/>
+          <br/>
+          <h5>Chaqueta</h5>
+          <h5 style="color: grey">Marca: <%= current_user.marcachaqueta %>, talla: <%= current_user.tallachaqueta %></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- container
+-->

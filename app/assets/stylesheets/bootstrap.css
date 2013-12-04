@@ -2009,6 +2009,7 @@ textarea.form-control {
 .checkbox-inline input[type="checkbox"] {
   float: left;
   margin-left: -20px;
+  float: none;
 }
 
 .radio + .radio,
@@ -4231,7 +4232,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #000000;
 }
 
 .nav-pills > li.active > a .caret,
@@ -4314,13 +4315,13 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav .caret {
-  border-top-color: #428bca;
-  border-bottom-color: #428bca;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
 }
 
 .nav a:hover .caret {
-  border-top-color: #2a6496;
-  border-bottom-color: #2a6496;
+  border-top-color: #FF0000;
+  border-bottom-color: #FF0000;
 }
 
 .nav-tabs .dropdown-menu {
