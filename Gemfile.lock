@@ -68,6 +68,7 @@ GEM
     fastercsv (1.5.5)
     formtastic (2.2.1)
       actionpack (>= 3.0)
+    google-analytics-rails (0.0.4)
     haml (4.0.4)
       tilt
     has_scope (0.6.0.rc)
@@ -165,6 +166,7 @@ DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.2.1)
   devise
+  google-analytics-rails
   haml
   jquery-rails (~> 3.0.4)
   jquery-ui-rails (~> 4.0.4)
