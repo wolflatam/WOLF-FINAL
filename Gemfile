@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 group :production do
 	gem 'pg'
+	
 end
 
 group :development, :test do
@@ -16,6 +17,8 @@ end
 gem 'devise'
 gem 'activeadmin'
 gem 'haml'
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
