@@ -17,7 +17,7 @@ end
 gem 'devise'
 gem 'activeadmin'
 gem 'haml'
-gem 'google-analytics-rails'
+
 
 
 # Gems used only for assets and not required
