@@ -103,6 +103,12 @@
   	<%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    
+    <% if Rails.env.production? %>  
+      <%= render layouts/ga %>
+    <% end %>
+
+
 
   </body>
 
